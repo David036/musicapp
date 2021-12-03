@@ -98,7 +98,7 @@
 
 .songs-section {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
 }
 
 .songs-section .song {
@@ -153,6 +153,8 @@
   cursor: pointer;
   padding: 5px 10px;
   color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .album:hover {
@@ -171,5 +173,53 @@
   opacity: 0.4;
   font-size: 15px;
   margin-bottom: 20px;
+}
+
+.sort-block {
+  max-width: 230px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.sort-length {
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 0, 0.445);
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.sort-length:hover {
+  background-color: yellow;
+  color: black;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.sort-name {
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: aquamarine;
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.sort-name:hover {
+  background-color: aqua;
+  color: black;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 /*# sourceMappingURL=style.css.map */
